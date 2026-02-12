@@ -135,6 +135,42 @@ body.dark-mode {
 .dark-mode-btn:hover {
     background-color: #34495e;
 }
+        .projects-grid {
+    display: grid;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-card {
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+}
+
+.project-card h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.project-card p {
+    font-size: 15px;
+    color: #555;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+        body.dark-mode .project-card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+}
+
+body.dark-mode .project-card p {
+    color: #ccc;
+}
     </style>
 </head>
 
@@ -156,12 +192,20 @@ body.dark-mode {
         </div>
 
        <div id="projects" class="section reveal">
-            <h2>Projects</h2>
-            <p>• My First Website<br>
-               • Learning GitHub Pages</p>
-           
-            
+    <h2>Projects</h2>
+
+    <div class="projects-grid">
+        <div class="project-card">
+            <h3>My First Website</h3>
+            <p>A clean minimal personal website built with HTML, CSS, and JavaScript.</p>
         </div>
+
+        <div class="project-card">
+            <h3>Learning GitHub Pages</h3>
+            <p>Deployed a live website using GitHub Pages with custom styling and animations.</p>
+        </div>
+    </div>
+</div>
 
         <footer>
             © 2026 Chrys
