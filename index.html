@@ -88,22 +88,47 @@
     opacity: 1;
     transform: translateY(0);
 }
+        html {
+    scroll-behavior: smooth;
+}
+
+.nav {
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    font-size: 14px;
+}
+
+.nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #000;
+}
     </style>
 </head>
 
 <body>
+    <nav class="nav">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+</nav>
     <div class="container">
         <img src="grant-ritchie-ii37vagPGgY-unsplash.jpg" alt="Chrys Photo" class="profile-photo">
 
         <h1>Chrys</h1>
         <p>I’m learning GitHub and web development, building skills step by step.</p>
 
-        <div class="section reveal">
+        <div id="about" class="section reveal">
             <h2>About</h2>
             <p>I’m interested in technology, investing, and continuous learning.</p>
         </div>
 
-        <div class="section reveal">
+       <div id="projects" class="section reveal">
             <h2>Projects</h2>
             <p>• My First Website<br>
                • Learning GitHub Pages</p>
