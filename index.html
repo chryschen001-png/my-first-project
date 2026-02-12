@@ -1,34 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Chrys's First Website</title>
+    <title>Chrys | Personal Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <style>
         body {
-            background-color: #f0f8ff;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
         }
+
+        .container {
+            max-width: 800px;
+            margin: 80px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
         h1 {
+            margin-top: 0;
+            font-size: 36px;
             color: #2c3e50;
         }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
+
+        h2 {
+            margin-top: 30px;
+            color: #444;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 18px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #2c3e50;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background-color: #1a252f;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #888;
         }
     </style>
 </head>
+
 <body>
-    <h1>Welcome to My Website 🚀</h1>
-    <p>Hello! My name is Chrys.</p>
-    <p>This is my first website on GitHub.</p>
+    <div class="container">
+        <h1>Hi, I'm Chrys 👋</h1>
+        <p>Welcome to my personal website.</p>
+        <p>I am learning GitHub, web development, and building my skills step by step.</p>
 
-    <h2>About Me</h2>
-    <p>I am learning GitHub and web development.</p>
+        <h2>About Me</h2>
+        <p>I enjoy learning technology, investing, and exploring new tools.</p>
 
-    <button onclick="alert('You clicked the button! 🎉')">
-        Click Me
-    </button>
+        <a href="#" class="button">Contact Me</a>
+
+        <footer>
+            © 2026 Chrys. All rights reserved.
+        </footer>
+    </div>
 </body>
 </html>
