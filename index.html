@@ -78,6 +78,16 @@
         transform: translateY(0);
     }
 }
+        .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
     </style>
 </head>
 
@@ -97,16 +107,7 @@
             <h2>Projects</h2>
             <p>• My First Website<br>
                • Learning GitHub Pages</p>
-            .reveal {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-}
+           
             <script>
     function revealOnScroll() {
         const reveals = document.querySelectorAll(".reveal");
