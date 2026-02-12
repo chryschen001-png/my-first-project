@@ -13,9 +13,10 @@
         }
 
         .container {
-            max-width: 680px;
-            margin: 120px auto;
-            padding: 0 20px;
+    max-width: 680px;
+    margin: 120px auto;
+    padding: 0 20px;
+    animation: fadeUp 0.9s ease-out;
         }
 
         h1 {
@@ -67,6 +68,16 @@
         a:hover {
             border-color: #111;
         }
+        @keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
     </style>
 </head>
 
