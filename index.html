@@ -97,6 +97,7 @@
     top: 30px;
     right: 40px;
     font-size: 14px;
+    z-index: 1000; /* Ensure it stays above the button */
 }
 
 .nav a {
@@ -130,6 +131,7 @@ body.dark-mode {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    z-index: 999; /* Slightly lower than the nav bar */
 }
 
 .dark-mode-btn:hover {
